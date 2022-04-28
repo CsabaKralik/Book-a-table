@@ -8,6 +8,7 @@ import Footer from "./comps/footer/footer";
 //
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Booking from "./comps/booking/Booking";
+import Menu from "./comps/menu/Menu";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="booking" element={<Booking />} />
+        <Route path="menu" element={<Menu />} />
       </Routes>
       <Footer />
     </BrowserRouter>

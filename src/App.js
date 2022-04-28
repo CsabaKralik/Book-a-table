@@ -7,6 +7,7 @@ import Intro from "./Intro";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Landing />
       <Intro />
       <Menu />

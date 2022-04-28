@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Book-a-table/static/css/main.0f6a0c10.css",
-    "main.js": "/Book-a-table/static/js/main.27090fbe.js",
+    "main.js": "/Book-a-table/static/js/main.67e3fe8c.js",
     "static/media/Intro.jpg": "/Book-a-table/static/media/Intro.6d975d47a122a43c75db.jpg",
     "static/media/booking.jpg": "/Book-a-table/static/media/booking.057d3bcdfc081229a3ec.jpg",
     "static/media/pizzaphoto.jpeg": "/Book-a-table/static/media/pizzaphoto.ef43cc58cc2595739533.jpeg",
     "static/media/szalamis-pizza.jpg": "/Book-a-table/static/media/szalamis-pizza.7d6475f899df5c482fa2.jpg",
     "index.html": "/Book-a-table/index.html",
     "main.0f6a0c10.css.map": "/Book-a-table/static/css/main.0f6a0c10.css.map",
-    "main.27090fbe.js.map": "/Book-a-table/static/js/main.27090fbe.js.map"
+    "main.67e3fe8c.js.map": "/Book-a-table/static/js/main.67e3fe8c.js.map"
   },
   "entrypoints": [
     "static/css/main.0f6a0c10.css",
-    "static/js/main.27090fbe.js"
+    "static/js/main.67e3fe8c.js"
   ]
 }

@@ -15,9 +15,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/Book-a-table" element={<App />} />
         <Route path="booking" element={<Booking />} />
-        <Route path="menu" element={<Menu />} />
       </Routes>
       <Footer />
     </BrowserRouter>

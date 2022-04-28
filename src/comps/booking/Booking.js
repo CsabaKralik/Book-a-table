@@ -6,6 +6,7 @@ import Input from "./Input";
 import bookingImg from "../../images/booking.jpg";
 import "./booking.css";
 import FormTitle from "./FormTitle";
+import Navbar from "../landing/navbar";
 function Booking() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -31,6 +32,7 @@ function Booking() {
 
   return (
     <main className="Booking">
+      <Navbar booking="true" />
       <img src={bookingImg} alt="pizzeria tables" />
       <form onSubmit={(event) => handleSubmit(event)}>
         <FormTitle />

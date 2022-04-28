@@ -13,10 +13,9 @@ import Menu from "./comps/menu/Menu";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/Book-a-table" element={<App />} />
-        <Route path="booking" element={<Booking />} />
+        <Route path="Book-a-table/" element={<App />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
     </BrowserRouter>

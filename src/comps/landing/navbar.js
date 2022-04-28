@@ -1,7 +1,7 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 function Navbar(props) {
-  booking = false;
+  let booking = false;
   if (props.booking === "true") {
     booking = true;
   }

@@ -1,0 +1,45 @@
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #ff2f2f 0%, #e10000 100%);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem;
+  gap: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  header a {
+    font-size: 0.9rem;
+  }
+  header {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  header a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: -5%;
+    background-color: #ffd61f;
+    transition: 250ms;
+  }
+
+  header a:hover::before {
+    width: 110%;
+  }
+}

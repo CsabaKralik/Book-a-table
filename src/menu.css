@@ -1,0 +1,29 @@
+#Menu {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.container {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  grid-row-gap: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    grid-template-columns: 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+  }
+}

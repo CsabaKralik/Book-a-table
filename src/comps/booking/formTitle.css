@@ -1,0 +1,70 @@
+.formTitle {
+  position: relative;
+}
+
+.formTitle::before {
+  content: "";
+  width: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e71f1f;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  transition: 200ms;
+  animation: widenLeft 300ms 700ms ease-in forwards;
+}
+
+.formTitle span {
+  opacity: 0;
+  animation: fadeIn 150ms ease-in forwards;
+}
+
+.formTitle span:nth-of-type(2) {
+  animation-delay: 75ms;
+}
+.formTitle span:nth-of-type(3) {
+  animation-delay: 150ms;
+}
+.formTitle span:nth-of-type(4) {
+  animation-delay: 225ms;
+}
+.formTitle span:nth-of-type(5) {
+  animation-delay: 300ms;
+}
+.formTitle span:nth-of-type(6) {
+  animation-delay: 375ms;
+}
+.formTitle span:nth-of-type(7) {
+  animation-delay: 450ms;
+}
+.formTitle span:nth-of-type(8) {
+  animation-delay: 525ms;
+}
+.formTitle span:nth-of-type(9) {
+  animation-delay: 600ms;
+}
+.formTitle span:nth-of-type(10) {
+  animation-delay: 675ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes widenLeft {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}

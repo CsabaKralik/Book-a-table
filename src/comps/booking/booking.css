@@ -1,0 +1,185 @@
+.Booking {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.Booking img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.Booking form {
+  min-width: 325px;
+  padding: 2rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Booking form::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.Booking form h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.Booking form label {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+}
+
+.Booking form input {
+  width: 0;
+  padding: 0.25rem;
+  position: relative;
+  border-radius: 0.25rem;
+  border: none;
+  border-bottom: 2px solid #fff;
+  opacity: 0;
+  animation: widenRight 300ms ease-in forwards;
+}
+
+.Booking form label p {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: rgb(197, 0, 0);
+}
+
+.Booking form button {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: linear-gradient(180deg, #ff2f2f 0%, #e10000 100%);
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeUp 300ms 500ms ease-in forwards;
+  transition: 200ms;
+}
+.Booking form button:hover {
+  background: linear-gradient(180deg, #e71f1f 0%, #be0000 100%);
+}
+.Booking form button:focus {
+  background: linear-gradient(180deg, #d30e0e 0%, #9e0000 100%);
+}
+
+.Booking .modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Booking .modal div {
+  padding: 1rem;
+  background-color: rgb(74 222 128);
+  max-width: 400px;
+  text-align: center;
+  border-radius: 0.25rem;
+  animation: scaleUp 300ms ease-in forwards;
+}
+
+.Booking .modal h2 {
+  margin-bottom: 1.5rem;
+}
+
+.Booking .modal a {
+  padding: 0.25rem 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: linear-gradient(180deg, #ff2f2f 0%, #e10000 100%);
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.Booking .modal a:hover {
+  background: linear-gradient(180deg, #e71f1f 0%, #be0000 100%);
+}
+
+.Booking .modal a:focus {
+  background: linear-gradient(180deg, #d30e0e 0%, #9e0000 100%);
+}
+
+.Booking .modal .datas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    1px 1px 3px rgba(255, 255, 255, 0.4);
+  margin-bottom: 1rem;
+}
+
+.Booking .modal .datas p {
+  margin: 0.5rem 0;
+}
+
+@keyframes widenRight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 12rem;
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
